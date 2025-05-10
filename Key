@@ -1,0 +1,6 @@
+local placeId = game.PlaceId
+if placeId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
+    -- Blox Fruits
+    getgenv().Team = "Pirates"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/norat202322/notfree/refs/heads/main/all.lua.txt"))()
+end
