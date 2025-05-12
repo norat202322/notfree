@@ -1,20 +1,5 @@
--- Kiểm tra nếu đang trong Blox Fruits
 local placeId = game.PlaceId
 if placeId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
-    -- Danh sách tin nhắn sẽ gửi
-    local messages = {
-        "Fan YT Norat Roblox",
-        "Subscribe kênh Norat Roblox nha!",
-        "Norat Roblox - Auto Script Tổng hợp"
-    }
-
-    -- Gửi tin nhắn đến toàn server (chỉ gửi 1 lần)
-    for _, msg in ipairs(messages) do
-        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
-    end
-
-    -- Cài đặt team và tải script từ GitHub
     getgenv().Team = "Pirates"
-    getgenv().Massage = {"YT Norat Roblox"}
     loadstring(game:HttpGet("https://raw.githubusercontent.com/norat202322/notfree/refs/heads/main/notkey.lua.txt"))()
 end
